@@ -128,10 +128,10 @@
 
     <TextView
         android:id="@+id/interestVal"
-        android:layout_width="7dp"
-        android:layout_height="16dp"
-        android:text="0%"
+        android:layout_width="25dp"
+        android:layout_height="18dp"
         android:fontFamily="@font/helveticarounded"
+        android:text="0%"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="@+id/rateText"
         app:layout_constraintStart_toStartOf="@+id/rateText"
