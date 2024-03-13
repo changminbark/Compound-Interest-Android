@@ -2,20 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/lavender"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lavender"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Compound Interest Calculator"
         android:fontFamily="@font/helveticarounded"
-        android:textSize="40dp"
-        android:textColor="@color/paynesGray"
+        android:text="Compound Interest Calculator"
         android:textAlignment="center"
+        android:textColor="@color/paynesGray"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,9 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:fontFamily="@font/helveticarounded"
         android:inputType="text"
         android:text=""
-        android:fontFamily="@font/helveticarounded"
         app:layout_constraintEnd_toEndOf="@+id/principalInput"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/principalInput"
@@ -52,27 +52,27 @@
 
     <TextView
         android:id="@+id/output"
-        android:layout_width="42dp"
-        android:layout_height="27dp"
+        android:layout_width="154dp"
+        android:layout_height="67dp"
         android:fontFamily="@font/helveticarounded"
         android:text="0"
+        android:textAlignment="center"
         android:textColor="@color/darkGreen"
         android:textSize="20dp"
-        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/rateBar"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="@+id/rateBar"
         app:layout_constraintTop_toBottomOf="@+id/rateBar"
-        app:layout_constraintVertical_bias="0.521" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <SeekBar
         android:id="@+id/rateBar"
         android:layout_width="187dp"
         android:layout_height="75dp"
         android:layout_marginTop="24dp"
-        android:thumbTint="@color/darkGreen"
         android:fontFamily="@font/helveticarounded"
+        android:thumbTint="@color/darkGreen"
         app:layout_constraintEnd_toEndOf="@+id/yearInput"
         app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="@+id/yearInput"
@@ -84,9 +84,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
         android:layout_marginEnd="12dp"
-        android:textSize="15dp"
-        android:text="Principal"
         android:fontFamily="@font/helveticarounded"
+        android:text="Principal"
+        android:textSize="15dp"
         app:layout_constraintEnd_toStartOf="@+id/principalInput"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -96,9 +96,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="12dp"
+        android:fontFamily="@font/helveticarounded"
         android:text="Years"
         android:textSize="15dp"
-        android:fontFamily="@font/helveticarounded"
         app:layout_constraintEnd_toStartOf="@+id/yearInput"
         app:layout_constraintTop_toBottomOf="@+id/principalText" />
 
@@ -108,9 +108,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
+        android:fontFamily="@font/helveticarounded"
         android:text="Interest Rate"
         android:textSize="15dp"
-        android:fontFamily="@font/helveticarounded"
         app:layout_constraintEnd_toStartOf="@+id/rateBar"
         app:layout_constraintTop_toBottomOf="@+id/yearText" />
 
@@ -118,13 +118,13 @@
         android:id="@+id/outputText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="12dp"
         android:fontFamily="@font/helveticarounded"
         android:text="Final Amount"
         android:textColor="@color/darkGreen"
         android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/output"
         app:layout_constraintTop_toBottomOf="@+id/interestVal" />
 
     <TextView
